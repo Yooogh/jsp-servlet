@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <div>
+
+<!--textarea를 사용하는 등의 장문의 내용(+ 비밀번호 등 공개되면 안되는 사항)은 쿼리스트링으로 보내면 안됨-->
+<!-- -> post 방식-->
+<!-- 쿼리스트링이 아닌 요청 바디로 보냄-->
+    <form action="notice-reg" method="post">
+      <div>
+        <label>제목:</label><input type="text" name="title">
+      </div>
+      <div>
+          <label>제목:</label>
+          <textarea name="content"></textarea>
+          <div>
+          <input type="submit" name="등록" />
+          </div>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
